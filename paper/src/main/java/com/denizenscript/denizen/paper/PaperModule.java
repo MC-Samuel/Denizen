@@ -134,6 +134,9 @@ public class PaperModule {
         if (NMSHandler.getVersion().isAtLeast(NMSVersion.v1_19)) {
             PropertyParser.registerProperty(EntitySneaking.class, EntityTag.class);
         }
+        if (NMSHandler.getVersion().isAtLeast(NMSVersion.v1_21)) {
+            PropertyParser.registerProperty(EntityWaxed.class, EntityTag.class);
+        }
         PropertyParser.registerProperty(EntityWitherInvulnerable.class, EntityTag.class);
         PropertyParser.registerProperty(ItemArmorStand.class, ItemTag.class);
 
